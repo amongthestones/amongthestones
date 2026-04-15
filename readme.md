@@ -6,7 +6,7 @@ A minimal WordPress theme. *Sinxelo* is Galician for "simple." An updated contin
 
 ## Why This Exists
 
-For several years I used **Simppeli** (parent) + a customized child theme on my personal website. Over time the parent/child relationship became a liability:
+For several years I used **Simppeli** (parent) + a customized child theme on [my personal website](https://amongthestones.com). Over time the parent/child relationship became a liability:
 
 - The parent was last updated in 2017
 - Every template change required tracking which file "won"
