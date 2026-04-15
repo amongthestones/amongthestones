@@ -2,28 +2,26 @@
 
 A minimal classic WordPress theme. *Sinxelo* is Galician for "simple."
 
-An updated continuation of [Simppeli](https://foxland.fi/downloads/simppeli/) by Sami Keijonen — combined, modernized, and extended with Gutenberg block support.
+An updated continuation of [Simppeli](https://foxland.fi/downloads/simppeli/) by Sami Keijonen: combined, modernized, and extended with Gutenberg block support.
 
 ---
 
 ## Why This Exists
 
-For several years I ran this site on **Simppeli** (parent) + a heavily customized child theme. Over time the parent/child relationship became a liability:
+For several years I used **Simppeli** (parent) + a customized child theme on my personal website. Over time the parent/child relationship became a liability:
 
-- The parent was last updated in 2017 and I had no control over it
-- Every template change required tracking which file "won" — parent or child
-- Site-specific integrations (SSP, Jetpack, year archives, taxonomies) were tangled into the theme
+- The parent was last updated in 2017
+- Every template change required tracking which file "won"
+- Site-specific integrations (SSP, Jetpack, year archives, taxonomies) were tangled into the child theme
 - The theme had no Gutenberg block support
 
-Rather than migrate to Full Site Editing — which I want to learn deliberately as a separate project — I took a different path: **merge everything into one standalone classic theme**, add block editor support where it makes sense (content area only), and extract site-specific code into its own plugin.
+Rather than migrate to Full Site Editing, which I want to explore as a separate project, I took a different path: **merge everything into one standalone classic theme**, add block editor support where it makes sense (content area only), and extract site-specific code into its own plugin.
 
 ### What This Is Not
 
 This is not an FSE theme. There is no Site Editor. No block templates. No `templates/*.html` files. Layout decisions are made in PHP, which is where I want them.
 
 Blocks are used as **content tools**, not layout tools. The block editor is active in posts and pages. Custom blocks (callout box) live in `blocks/`. The Site Editor is not available.
-
-FSE is a separate project, deferred intentionally.
 
 ---
 
