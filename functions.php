@@ -52,6 +52,7 @@ function sinxelo_setup(): void {
 	add_theme_support( 'post-formats', [ 'aside', 'image', 'quote', 'link' ] );
 
 	// Block editor support (no FSE — blocks in content area only)
+	add_theme_support( 'editor-styles' );
 	add_theme_support( 'align-wide' );
 	add_theme_support( 'responsive-embeds' );
 	add_editor_style( 'assets/css/editor-style.css' );
