@@ -1,8 +1,6 @@
 # Sinxelo
 
-A minimal classic WordPress theme. *Sinxelo* is Galician for "simple."
-
-An updated continuation of [Simppeli](https://github.com/samikeijonen/simppeli) by Sami Keijonen: combined, modernized, and extended with Gutenberg block support.
+A minimal WordPress theme. *Sinxelo* is Galician for "simple." An updated continuation of [Simppeli](https://github.com/samikeijonen/simppeli) by Sami Keijonen: combined, modernized, and extended with Gutenberg block support. Since Simppeli means "simple" in Finnish, *sinxelo* looks, sounds, and feels appropriate.
 
 ---
 
