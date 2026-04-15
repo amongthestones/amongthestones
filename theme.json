@@ -1,0 +1,54 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/theme.json",
+  "version": 3,
+
+  "settings": {
+
+    "appearanceTools": false,
+
+    "color": {
+      "custom":          false,
+      "customGradient":  false,
+      "customDuotone":   false,
+      "defaultPalette":  false,
+      "defaultGradients": false,
+      "defaultDuotone":  false,
+      "palette": [
+        { "slug": "text",       "color": "#404040", "name": "Text" },
+        { "slug": "heading",    "color": "#111111", "name": "Heading" },
+        { "slug": "background", "color": "#ffffff", "name": "Background" },
+        { "slug": "border",     "color": "#111111", "name": "Border" },
+        { "slug": "highlight",  "color": "#F4E28A", "name": "Highlight" },
+        { "slug": "muted",      "color": "#4d4d4d", "name": "Muted" }
+      ]
+    },
+
+    "typography": {
+      "defaultFontSizes": false,
+      "fluid": false,
+      "fontFamilies": [
+        {
+          "slug":       "serif",
+          "name":       "Noto Serif",
+          "fontFamily": "'Noto Serif', Georgia, serif"
+        },
+        {
+          "slug":       "sans",
+          "name":       "Noto Sans",
+          "fontFamily": "'Noto Sans', system-ui, sans-serif"
+        },
+        {
+          "slug":       "mono",
+          "name":       "Monospace",
+          "fontFamily": "Monaco, Consolas, 'Andale Mono', 'DejaVu Sans Mono', monospace"
+        }
+      ]
+    },
+
+    "spacing": {
+      "customSpacingSize": false,
+      "spacingSizes":      []
+    }
+
+  }
+}

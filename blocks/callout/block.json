@@ -1,0 +1,18 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "sinxelo/callout",
+  "title": "Callout",
+  "description": "A yellow highlight callout box that accepts any inner blocks.",
+  "category": "design",
+  "keywords": [ "callout", "highlight", "note", "aside" ],
+  "textdomain": "sinxelo",
+  "editorScript": "file:./index.js",
+  "supports": {
+    "html": false,
+    "align": false,
+    "spacing": {
+      "padding": true
+    }
+  }
+}

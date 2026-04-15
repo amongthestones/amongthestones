@@ -1,0 +1,134 @@
+/*
+ * Sinxelo — Block editor styles
+ *
+ * Mirrors the frontend typography and layout so the editor matches the site.
+ * Loaded via add_editor_style() in functions.php.
+ *
+ * @font-face paths are relative to THIS file (assets/css/), so fonts are ../fonts/.
+ */
+
+/* --------------------------------------------------------------------------
+   @font-face — must be declared here so the editor can load local fonts.
+   Paths are relative to assets/css/ → ../fonts/
+   -------------------------------------------------------------------------- */
+
+/* Noto Sans — italic, latin-ext */
+@font-face { font-family: 'Noto Sans'; font-style: italic; font-weight: 400; font-display: swap; unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF; src: url('../fonts/noto-sans-italic-latin-ext.woff2') format('woff2'); }
+/* Noto Sans — italic, latin */
+@font-face { font-family: 'Noto Sans'; font-style: italic; font-weight: 400; font-display: swap; unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD; src: url('../fonts/noto-sans-italic-latin.woff2') format('woff2'); }
+/* Noto Sans — bold italic, latin-ext */
+@font-face { font-family: 'Noto Sans'; font-style: italic; font-weight: 700; font-display: swap; unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF; src: url('../fonts/noto-sans-italic-latin-ext.woff2') format('woff2'); }
+/* Noto Sans — bold italic, latin */
+@font-face { font-family: 'Noto Sans'; font-style: italic; font-weight: 700; font-display: swap; unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD; src: url('../fonts/noto-sans-italic-latin.woff2') format('woff2'); }
+/* Noto Sans — normal, latin-ext */
+@font-face { font-family: 'Noto Sans'; font-style: normal; font-weight: 400; font-display: swap; unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF; src: url('../fonts/noto-sans-normal-latin-ext.woff2') format('woff2'); }
+/* Noto Sans — normal, latin */
+@font-face { font-family: 'Noto Sans'; font-style: normal; font-weight: 400; font-display: swap; unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD; src: url('../fonts/noto-sans-normal-latin.woff2') format('woff2'); }
+/* Noto Sans — bold, latin-ext */
+@font-face { font-family: 'Noto Sans'; font-style: normal; font-weight: 700; font-display: swap; unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF; src: url('../fonts/noto-sans-normal-latin-ext.woff2') format('woff2'); }
+/* Noto Sans — bold, latin */
+@font-face { font-family: 'Noto Sans'; font-style: normal; font-weight: 700; font-display: swap; unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD; src: url('../fonts/noto-sans-normal-latin.woff2') format('woff2'); }
+
+/* Noto Serif — italic, latin-ext */
+@font-face { font-family: 'Noto Serif'; font-style: italic; font-weight: 400; font-display: swap; unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF; src: url('../fonts/noto-serif-italic-latin-ext.woff2') format('woff2'); }
+/* Noto Serif — italic, latin */
+@font-face { font-family: 'Noto Serif'; font-style: italic; font-weight: 400; font-display: swap; unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD; src: url('../fonts/noto-serif-italic-latin.woff2') format('woff2'); }
+/* Noto Serif — bold italic, latin-ext */
+@font-face { font-family: 'Noto Serif'; font-style: italic; font-weight: 700; font-display: swap; unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF; src: url('../fonts/noto-serif-italic-latin-ext.woff2') format('woff2'); }
+/* Noto Serif — bold italic, latin */
+@font-face { font-family: 'Noto Serif'; font-style: italic; font-weight: 700; font-display: swap; unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD; src: url('../fonts/noto-serif-italic-latin.woff2') format('woff2'); }
+/* Noto Serif — normal, latin-ext */
+@font-face { font-family: 'Noto Serif'; font-style: normal; font-weight: 400; font-display: swap; unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF; src: url('../fonts/noto-serif-normal-latin-ext.woff2') format('woff2'); }
+/* Noto Serif — normal, latin */
+@font-face { font-family: 'Noto Serif'; font-style: normal; font-weight: 400; font-display: swap; unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD; src: url('../fonts/noto-serif-normal-latin.woff2') format('woff2'); }
+/* Noto Serif — bold, latin-ext */
+@font-face { font-family: 'Noto Serif'; font-style: normal; font-weight: 700; font-display: swap; unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF; src: url('../fonts/noto-serif-normal-latin-ext.woff2') format('woff2'); }
+/* Noto Serif — bold, latin */
+@font-face { font-family: 'Noto Serif'; font-style: normal; font-weight: 700; font-display: swap; unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD; src: url('../fonts/noto-serif-normal-latin.woff2') format('woff2'); }
+
+/* Match frontend content width */
+.editor-styles-wrapper .wp-block {
+	max-width: 37.5em;
+}
+
+.editor-styles-wrapper .wp-block[data-align="wide"] {
+	max-width: 55em;
+}
+
+.editor-styles-wrapper .wp-block[data-align="full"] {
+	max-width: none;
+}
+
+/* Body typography — force light background regardless of system dark mode */
+.editor-styles-wrapper {
+	background-color: #ffffff;
+	color: #4d4d4d;
+	font-family: "Noto Serif", serif;
+	font-size: 1em;
+	line-height: 1.5;
+}
+
+/* Headings */
+.editor-styles-wrapper h1,
+.editor-styles-wrapper h2,
+.editor-styles-wrapper h3,
+.editor-styles-wrapper h4,
+.editor-styles-wrapper h5,
+.editor-styles-wrapper h6 {
+	color: #111;
+	font-family: "Noto Sans", sans-serif;
+	line-height: 1.2;
+}
+
+/* Links */
+.editor-styles-wrapper a {
+	color: #111;
+}
+
+/* Blockquote */
+.editor-styles-wrapper blockquote {
+	margin: 1em 1em;
+	color: #404040;
+	border-left: 2px solid #404040;
+	padding-left: 0.75em;
+	font-style: italic;
+}
+
+/* Mark / highlight */
+.editor-styles-wrapper mark {
+	background-color: #F4E28A;
+	padding: 0.05em;
+	border-radius: 5px;
+}
+
+/* Code / pre */
+.editor-styles-wrapper pre,
+.editor-styles-wrapper code {
+	font-family: Monaco, Consolas, "Andale Mono", "DejaVu Sans Mono", monospace;
+}
+
+.editor-styles-wrapper pre {
+	border: 1px dotted #111;
+	padding: 1.6em;
+	overflow: auto;
+}
+
+/* Callout block */
+.editor-styles-wrapper .callout-box,
+.editor-styles-wrapper .wp-block-sinxelo-callout {
+	background-color: #F4E28A;
+	border: 2px solid #404040;
+	border-radius: 5px;
+	padding: 1rem 1.25rem;
+	margin: 0 0 1.5rem;
+}
+
+.editor-styles-wrapper .callout-box > *:first-child,
+.editor-styles-wrapper .wp-block-sinxelo-callout > *:first-child {
+	margin-top: 0;
+}
+
+.editor-styles-wrapper .callout-box > *:last-child,
+.editor-styles-wrapper .wp-block-sinxelo-callout > *:last-child {
+	margin-bottom: 0;
+}
