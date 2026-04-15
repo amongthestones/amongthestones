@@ -48,7 +48,40 @@
     "spacing": {
       "customSpacingSize": false,
       "spacingSizes":      []
+    },
+
+    "layout": {
+      "contentSize": "37.5em",
+      "wideSize":    "55em"
     }
 
+  },
+
+  "styles": {
+    "typography": {
+      "fontFamily": "var(--wp--preset--font-family--serif)",
+      "fontSize":   "1em",
+      "lineHeight": "1.5"
+    },
+    "color": {
+      "text":       "#4d4d4d",
+      "background": "#ffffff"
+    },
+    "elements": {
+      "heading": {
+        "typography": {
+          "fontFamily": "var(--wp--preset--font-family--sans)",
+          "lineHeight": "1.2"
+        },
+        "color": {
+          "text": "#111111"
+        }
+      },
+      "link": {
+        "color": {
+          "text": "#111111"
+        }
+      }
+    }
   }
 }

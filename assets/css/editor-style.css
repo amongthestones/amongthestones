@@ -113,6 +113,13 @@
 	overflow: auto;
 }
 
+/* Post title — replicate frontend uppercase */
+.editor-post-title__input,
+.editor-post-title h1 {
+	text-transform: uppercase;
+	font-family: "Noto Sans", sans-serif;
+}
+
 /* Callout block */
 .editor-styles-wrapper .callout-box,
 .editor-styles-wrapper .wp-block-sinxelo-callout {
@@ -130,5 +137,19 @@
 
 .editor-styles-wrapper .callout-box > *:last-child,
 .editor-styles-wrapper .wp-block-sinxelo-callout > *:last-child {
+	margin-bottom: 0;
+}
+
+/* In the block editor, InnerBlocks adds wrapper divs between the callout
+   container and the paragraph, so target them directly. */
+.editor-styles-wrapper .wp-block-sinxelo-callout .block-editor-inner-blocks {
+	margin: 0;
+}
+
+.editor-styles-wrapper .wp-block-sinxelo-callout .wp-block:first-child {
+	margin-top: 0;
+}
+
+.editor-styles-wrapper .wp-block-sinxelo-callout .wp-block:last-child {
 	margin-bottom: 0;
 }
