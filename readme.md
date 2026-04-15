@@ -2,7 +2,7 @@
 
 A minimal classic WordPress theme. *Sinxelo* is Galician for "simple."
 
-An updated continuation of [Simppeli](https://foxland.fi/downloads/simppeli/) by Sami Keijonen: combined, modernized, and extended with Gutenberg block support.
+An updated continuation of [Simppeli](https://github.com/samikeijonen/simppeli) by Sami Keijonen: combined, modernized, and extended with Gutenberg block support.
 
 ---
 
